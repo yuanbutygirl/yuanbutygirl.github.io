@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>西安</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        nav .nav ul li a:hover{
+            cursor: pointer;
+            color: orange;
+        }
+        *{
+            margin:0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        img{
+            border: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+            cursor: pointer;
+        }
+        body{
+            background: #f6f6f6;
+        }
+
+
+        #main{
+            margin-top: 100px;
+            height: 800px;
+            /*background: #545E64;*/
+        }
+        .main-common{
+            margin:0 auto;
+            width: 1200px;
+        }
+        #main-name{
+            height: 80px;
+        }
+        #main-name h4{
+            color: #111;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 32px;
+            display: block;
+            margin-top: 15px;
+        }
+        #main-name span{
+            font-size: 20px;
+            color: #666;
+            display: block;
+            float: left;
+        }
+
+        #main-navigation{
+            width: 1200px;
+            height: 40px;
+            background: #545E64;
+        }
+        #navigation-one a,#navigation-two a,#navigation-three a{
+            color: white;
+            float: left;
+            margin-left: 20px;
+            /*width: 50px;*/
+            line-height: 40px;
+        }
+        #main-navigation a:hover {
+            color:#FF8400;
+        }
+        .fixed_banner {
+            position: fixed;
+            bottom: 10px;
+            height: 100px;
+            z-index: 10000;
+            display: none;
+        }
+        /*结束导航栏*/
+
+        #main-left{
+			background-position:center;
+            width: 1200px;
+            height: 600px;
+            float: left;
+            background: white;
+        }
+        #left-one-left{
+            width: 525px;
+            height: 295px;
+            margin-top: 30px;
+			margin-left:60px;
+            float: left;
+        }
+        #left-one-right{
+            float: left;
+            width: 345px;
+            height: 295px;
+            margin-top: 50px;
+            margin-left: 60px;
+            /*background: #000000;*/
+        }
+        #left-one-left #container{
+            width: 525px;
+            height:295px;
+            position: relative;
+            margin:0 auto;
+            z-index:1;
+        }
+
+        #left-one-left #container #imgs img{
+            display: none;
+        }
+        #left-one-left #container #imgs .selected{
+            display: block;
+        }
+        #left-one-left #container #nav{
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+            z-index:1;
+        }
+        #left-one-left #container #nav li, #left-one-left #container #arrows div{
+            width: 20px;
+            height: 20px;/*切换图片按钮的大小*/
+            background: #000000;
+            color: #ffffff;
+            cursor: pointer;
+            text-align: center;
+            line-height: 20px;
+            float: left;
+            margin-right:5px;
+        }
+        #left-one-left #container #nav .selected{
+            background: orange;
+        }
+        #left-one-left #container #arrows #left{
+            position: absolute;
+            left: 5px;
+            bottom: 140px;/*按钮的位置*/
+        }
+        #left-one-left #container #arrows #right{
+            position: absolute;
+            right: 5px;
+            bottom: 140px;
+        }
+        /*轮播图完成*/
+        .title {
+            margin-top: 0;
+            font-size: 24px;
+            font-family: "microsoft yahei";
+            font-weight: 500;
+            color: #111;
+            line-height: 24px;
+        }
+        .main-desc-p{
+            margin-top: 20px;
+            font-weight: 400;
+			height:148px;
+            /*font-size: 0.8pc;*/
+        }
+        .main-desc-p .click-more-info{
+            color: #0091d9;
+
+        }
+        .main-intro{
+            margin-top: -30px;
+        }
+        
+        /*main左侧上面完成*/
+        #kongbai{
+	width: 1000px;
+	height: 370px;
+        }
+        #left-two-introduce{
+	width:1000px;
+	height: 300px;
+        }
+        #left-two-introduce .v2-sd-title{
+	display: block;
+	background: #f6f6f6;
+	height: 41px;
+	width: 970px;
+	line-height: 41px;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	letter-spacing: 0px;
+        }
+        #left-two-introduce .v2-sd-title img{
+            vertical-align: middle;
+        }
+        #left-two-introduce .ydxz{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        /*介绍完成*/
+    </style>
+</head>
+
+<body>
+<nav>
+    <div class="name"><a href="">漫步者</a></div>
+    <div class="nav" id="a">
+        <ul>
+            <li><a href="../index.html" style="text-decoration: none;">首页</a></li>
+            <li><a href="zhuce.html" style="text-decoration: none;">注册</a></li>
+        </ul>
+    </div>
+    <div class="min-nav">
+        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+    </div>
+    <div class="min-nav-main">
+        <ul>
+            <li><a href="../index.html" style="text-decoration: none;">首页</a></li>
+            <li><a href="zhuce.html" style="text-decoration: none;">注册</a></li>
+        </ul>
+    </div>
+</nav>
+    <div id="main">
+        <div id="main-name" class="main-common">
+            <h4>西安民宿与兵马俑</h4>
+            <span>xianminsuyubingmayong</span></div>
+        <div id="main-navigation" class="fixed_banner">
+        </div>
+        <div id="main-introduce" class="main-common">
+            <div id="main-left" >
+                <div id="left-one-left">
+                    <div id="container">
+                        <div id="imgs">
+                            <img src="../f/x1.jpg" alt="" class="selected">
+                            <img src="../f/x2.jpg" alt="">
+                            <img src="../f/x3.jpg" alt="">
+                            <img src="../f/x4.jpg" alt="">
+                        </div>
+                        <ul id="nav">
+                            <li class="selected">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                        <div id="arrows">
+                            <div id="left">&lt;</div>
+                            <div id="right">&gt;</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="left-one-right">
+                    <h3 class="title">关于西安兵马俑&nbsp;&nbsp;&nbsp;
+                    </h3>
+                    <p class="main-desc-p">
+                        西安是一座历史古城，这里有着众多的历史人文景点。秦始皇兵马俑队伍庞大、栩栩如生。历史博物馆内藏品丰富，逛上一圈会让你收益匪浅。来这里登上大雁塔远眺，古城风貌尽收眼底，倾听历史的沉浮兴衰。...
+                        <a class="click-more-info" href="javascript:void(0);" onClick="show();return false;">[详细简介]</a>
+                    </p>
+                    <div class="main-intro">
+                       
+                    </div></div>
+                <div id="kongbai"></div>
+                <div id="left-two-introduce">
+
+                    <div class="v2_di detail_infor v2-fordfImg fordfImg">
+                        <div class="v2-sd-title"><span>具体介绍</span></div>
+                        <div class="v2_di detail_infor v2-fordfImg fordfImg">
+                            <p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                &nbsp; &nbsp;房主Judy是家居设计师，先生是摄影师。一进去就能感受到简约、时尚、文艺的风格，看得出设计师从布局实木桌、沙发、地毯、挂画、盆栽到床上四件套的用心！有简单的厨房，做点吃的喝的没有问题，床单卫浴没有头发丝，东西摆放整齐，家具很贴近生活，给人一种家的感觉。房东人美好沟通，非常热情。保安也很负责。这里有地铁，距离西安城墙超级近，附近小吃好吃又便宜，大家有机会可以选择入住。<br></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--轮播图js-->
+<script>
+    var oNav = document.getElementById("nav");
+    var aLi = oNav.getElementsByTagName("li");
+    var oImgs = document.getElementById("imgs");
+    var aImg = oImgs.getElementsByTagName("img");
+    var oLeft = document.getElementById("left");
+    var oRight = document.getElementById("right");
+    var oContainer = document.getElementById("container");
+    var nowindex = 0; //保存当前的index
+    var timer;
+    for (var i = 0; i < aLi.length; i++) {
+        aLi[i].index = i;
+        aLi[i].onmousemove = function () {
+            nowindex = this.index;
+            changgeImg();
+        };
+    }
+    oLeft.onclick = oRight.onclick = function () {
+        if (this == oLeft) {
+            nowindex--;
+            if (nowindex == -1) {
+                nowindex = aLi.length - 1;
+            }
+        } else {
+            nowindex++;
+            if (nowindex == aLi.length) {
+                nowindex = 0;
+            } //判断是否越界
+        }
+        changgeImg();
+    };
+    oContainer.onmouseover = function () {
+        clearInterval(timer);
+    };
+    oContainer.onmouseout = function () {
+        play();
+
+    };
+
+    play();
+    function play() {
+        timer = setInterval(function () {
+            oRight.onclick();
+        }, 2000);
+    };
+
+    function changgeImg() {
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].className = "";
+            aImg[i].className = "";
+        }
+        aLi[nowindex].className = "selected";
+        aImg[nowindex].className = "selected";
+    }
+    var isshow = 0;
+    function creatediv() {
+        var msgw, msgh, bordercolor;
+        msgw = 400;//提示窗口的宽度
+        msgh =405;//提示窗口的高度
+        var sWidth, sHeight;
+        if (top.location == self.location)
+            doc = document;
+        var docElement = doc.documentElement;
+        sWidth = docElement.clientWidth;
+        sHeight = docElement.clientHeight;
+        if (docElement.scrollHeight > sHeight)
+            sHeight = docElement.scrollHeight;
+        var bgObj = document.createElement("div");
+        bgObj.setAttribute('id', 'bgDiv');
+        bgObj.style.position = "absolute";
+        bgObj.style.top = "0";
+        bgObj.style.left = "0";
+        bgObj.style.background = "#777";
+        bgObj.style.filter = "progid:DXImageTransform.Microsoft.Alpha(style=3,opacity=25,finishOpacity=75";
+        bgObj.style.opacity = "0.6";
+        bgObj.style.width = sWidth + "px";
+        bgObj.style.height = sHeight + "px";
+        bgObj.style.zIndex = "10000";
+        document.body.appendChild(bgObj);
+
+
+        var msgObj = document.createElement("div");
+        msgObj.setAttribute("id", "msgDiv");
+        msgObj.setAttribute("align", "center");
+        msgObj.style.position = "absolute";
+        msgObj.style.left = "50%";
+        msgObj.style.background = "#fff";
+        msgObj.style.marginLeft = "-200px";
+        msgObj.style.top = (document.documentElement.clientHeight / 2 + document.documentElement.scrollTop - 252) + "px";
+        msgObj.style.width = msgw + "px";
+        msgObj.style.height = msgh + "px";
+        msgObj.style.zIndex = "10001";
+        msgObj.style.scrollbars = "yes";
+        msgObj.style.overflow = "auto";
+        msgObj.innerHTML = "<br /><br />" + "&nbsp;&nbsp;&nbsp;&nbsp;夜晚，钟鼓楼在金碧辉煌，异常壮观。去芙蓉园看一出戏，仿佛时光穿越，梦回古都。" +
+            "<a href=\"javascript:void(0);\" onclick='delWinD();return false;'><br /><br /><br />点我关闭窗口</a>";
+        document.body.appendChild(msgObj);
+    }
+    function delWinD() {
+        document.getElementById("bgDiv").style.display = "none";
+        document.getElementById("msgDiv").style.display = "none";
+        isshow = 0;
+    }
+    function show() {
+        isshow = 1;
+        if (!document.getElementById("msgDiv"))//小窗口不存在
+            creatediv();
+        else {
+            document.getElementById("bgDiv").style.display = "";
+            document.getElementById("msgDiv").style.display = "";
+            document.getElementById("msgDiv").style.top = (document.documentElement.clientHeight / 2 + document.documentElement.scrollTop - 252) + "px";
+        }
+    }
+</script>
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/nav.js"></script>
+</body>
+</html>

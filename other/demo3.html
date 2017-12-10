@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成都</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        nav .nav ul li a:hover{
+            cursor: pointer;
+            color: orange;
+        }
+        *{
+            margin:0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        img{
+            border: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+            cursor: pointer;
+        }
+        body{
+            background: #f6f6f6;
+        }
+
+
+        #main{
+            margin-top: 100px;
+            height: 1400px;
+            /*background: #545E64;*/
+        }
+        .main-common{
+            margin:0 auto;
+            width: 1200px;
+        }
+        #main-name{
+            height: 80px;
+        }
+        #main-name h4{
+            color: #111;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 32px;
+            display: block;
+            margin-top: 15px;
+        }
+        #main-name span{
+            font-size: 20px;
+            color: #666;
+            display: block;
+            float: left;
+        }
+
+        #main-navigation{
+            width: 1200px;
+            height: 40px;
+            background: #545E64;
+        }
+        #navigation-one a,#navigation-two a,#navigation-three a{
+            color: white;
+            float: left;
+            margin-left: 20px;
+            /*width: 50px;*/
+            line-height: 40px;
+        }
+        #main-navigation a:hover {
+            color:#FF8400;
+        }
+        .fixed_banner {
+            position: fixed;
+            bottom: 10px;
+            height: 100px;
+            z-index: 10000;
+            display: none;
+        }
+        /*结束导航栏*/
+
+        #main-left{
+			background-position:center;
+            width: 1200px;
+            height: 1200px;
+            float: left;
+            background: white;
+        }
+        #left-one-left{
+            width: 525px;
+            height: 295px;
+            margin-top: 30px;
+			margin-left:60px;
+            float: left;
+        }
+        #left-one-right{
+            float: left;
+            width: 345px;
+            height: 295px;
+            margin-top: 50px;
+            margin-left: 60px;
+            /*background: #000000;*/
+        }
+        #left-one-left #container{
+            width: 525px;
+            height:295px;
+            position: relative;
+            margin:0 auto;
+            z-index:1;
+        }
+
+        #left-one-left #container #imgs img{
+            display: none;
+        }
+        #left-one-left #container #imgs .selected{
+            display: block;
+        }
+        #left-one-left #container #nav{
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+            z-index:1;
+        }
+        #left-one-left #container #nav li, #left-one-left #container #arrows div{
+            width: 20px;
+            height: 20px;/*切换图片按钮的大小*/
+            background: #000000;
+            color: #ffffff;
+            cursor: pointer;
+            text-align: center;
+            line-height: 20px;
+            float: left;
+            margin-right:5px;
+        }
+        #left-one-left #container #nav .selected{
+            background: orange;
+        }
+        #left-one-left #container #arrows #left{
+            position: absolute;
+            left: 5px;
+            bottom: 140px;/*按钮的位置*/
+        }
+        #left-one-left #container #arrows #right{
+            position: absolute;
+            right: 5px;
+            bottom: 140px;
+        }
+        /*轮播图完成*/
+        .title {
+            margin-top: 0;
+            font-size: 24px;
+            font-family: "microsoft yahei";
+            font-weight: 500;
+            color: #111;
+            line-height: 24px;
+        }
+        .main-desc-p{
+            margin-top: 20px;
+            font-weight: 400;
+			height:148px;
+            /*font-size: 0.8pc;*/
+        }
+        .main-desc-p .click-more-info{
+            color: #0091d9;
+
+        }
+        .main-intro{
+            margin-top: -30px;
+        }
+        
+        /*main左侧上面完成*/
+        #kongbai{
+	width: 1000px;
+	height: 370px;
+        }
+        #left-two-introduce{
+	width:1000px;
+	height: 300px;
+        }
+        #left-two-introduce .v2-sd-title{
+	display: block;
+	background: #f6f6f6;
+	height: 41px;
+	width: 970px;
+	line-height: 41px;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	letter-spacing: 0px;
+        }
+        #left-two-introduce .v2-sd-title img{
+            vertical-align: middle;
+        }
+        #left-two-introduce .ydxz{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        /*介绍完成*/
+    </style>
+</head>
+
+<body>
+<nav>
+    <div class="name"><a href="">漫步者</a></div>
+    <div class="nav" id="a">
+        <ul>
+            <li><a href="../index.html" style="text-decoration: none;">首页</a></li>
+            <li><a href="zhuce.html" style="text-decoration: none;">注册</a></li>
+        </ul>
+    </div>
+    <div class="min-nav">
+        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+    </div>
+    <div class="min-nav-main">
+        <ul>
+            <li><a href="../index.html" style="text-decoration: none;">首页</a></li>
+            <li><a href="zhuce.html" style="text-decoration: none;">注册</a></li>
+        </ul>
+    </div>
+</nav>
+    <div id="main">
+        <div id="main-name" class="main-common">
+            <h4>成都了解多少？</h4>
+            <span>How much do you know about chengdu?</span></div>
+        <div id="main-navigation" class="fixed_banner">
+        </div>
+        <div id="main-introduce" class="main-common">
+            <div id="main-left" >
+                <div id="left-one-left">
+                    <div id="container">
+                        <div id="imgs">
+                            <img src="../f/c1.jpg" alt="" class="selected">
+                            <img src="../f/c2.jpg" alt="">
+                            <img src="../f/c3.jpg" alt="">
+                            <img src="../f/c4.jpg" alt="">
+                        </div>
+                        <ul id="nav">
+                            <li class="selected">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                        <div id="arrows">
+                            <div id="left">&lt;</div>
+                            <div id="right">&gt;</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="left-one-right">
+                    <h3 class="title">关于成都&nbsp;&nbsp;&nbsp;
+                    </h3>
+                    <p class="main-desc-p">
+                        成都有位于四川盆地西部的岷江中游地段，其平原面积和丘陵、山地面积几乎各占一半。成都市区位于成都平原东部，自古就有都江堰水利工程的灌溉，因此成为"水旱从人，不知饥馑"的"天府之土"。成都自古为西南重镇，三国时为蜀汉国都，五代十国时为前蜀、后蜀都城，文化遗存丰富，1982年被国务院公布为国家历史文化名城。...
+                        <a class="click-more-info" href="javascript:void(0);" onClick="show();return false;">[详细简介]</a>
+                    </p>
+                    <div class="main-intro">
+                       
+                    </div></div>
+                <div id="kongbai"></div>
+                <div id="left-two-introduce">
+
+                    <div class="v2_di detail_infor v2-fordfImg fordfImg">
+                        <div class="v2-sd-title"><span>具体介绍</span></div>
+                        <div class="v2_di detail_infor v2-fordfImg fordfImg">
+                            <p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                &nbsp; &nbsp;都江堰
+都江堰是世界文化遗产、世界自然遗产（四川大熊猫栖息地）、全国重点文物保护单位、国家级风景名胜区、国家AAAAA级旅游景区，位于四川省成都市都江堰市城西，坐落在成都平原西部的岷江上，始建于秦昭王末年，是蜀郡太守李冰父子在前人鳖灵开凿的基础上组织修建的大型水利工程，由分水鱼嘴、飞沙堰、宝瓶口等部分组成，两千多年来一直发挥着防洪灌溉的作用，使成都平原成为水旱从人、沃野千里的"天府之国"，至今灌区已达30余县市、面积近千万亩，是全世界迄今为止，年代最久、唯一留存、仍在一直使用、以无坝引水为特征的宏大水利工程，凝聚着中国古代劳动人民勤劳、勇敢、智慧的结晶。
+<p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                &nbsp; &nbsp;杜甫草堂
+成都杜甫草堂博物馆位于四川省成都市青羊区青华路37号，是中国唐代大诗人杜甫流寓成都时的故居。杜甫先后在此居住近四年，创作诗歌240余首，众所周知的《茅屋为秋风所破歌》就是在这里所作。唐末诗人韦庄寻得草堂遗址，重结茅屋，使之得以保存，宋元明清历代都有修葺扩建。博物馆是首批全国重点文物保护单位，首批国家一级博物馆，全国古籍重点保护单位，国家AAAA级旅游景区，是中国规模最大、保存最完好、知名度最高且最具特色的杜甫行踪遗迹地。
+<p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                &nbsp; &nbsp;武侯祠
+武侯祠位于四川省成都市武侯区，肇始于公元223年修建刘备惠陵时，它是中国唯一的一座君臣合祀祠庙和最负盛名的诸葛亮、刘备及蜀汉英雄纪念地，也是全国影响最大的三国遗迹博物馆。1961年国务院公布为首批全国重点文物保护单位，2008年评选为首批国家一级博物馆。成都武侯祠现占地15万平方米，由三国历史遗迹区（文物区）、西区（三国文化体验区）以及锦里民俗区（锦里）三部分组成，享有"三国圣地"的美誉。
+<p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                &nbsp; &nbsp;金沙遗址博物馆
+成都金沙遗址博物馆是在金沙遗址原址上建立的一座遗址类博物馆，也是展示商周时期四川地区古蜀文化的专题类博物馆。博物馆于2004年底立项建设，2007年4月16日正式对外开放，占地面积30万平方米，建筑面积38000平方米，由遗迹馆、陈列馆、游客中心、文化保护与修复中心、金沙剧场、园林区等组成，是一座集教育、研究、休闲于一体的现代化园林式博物馆，并成为代表成都悠久历史的标识性景观。2006年被评为全国重点文物保护单位。
+<br></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--轮播图js-->
+<script>
+    var oNav = document.getElementById("nav");
+    var aLi = oNav.getElementsByTagName("li");
+    var oImgs = document.getElementById("imgs");
+    var aImg = oImgs.getElementsByTagName("img");
+    var oLeft = document.getElementById("left");
+    var oRight = document.getElementById("right");
+    var oContainer = document.getElementById("container");
+    var nowindex = 0; //保存当前的index
+    var timer;
+    for (var i = 0; i < aLi.length; i++) {
+        aLi[i].index = i;
+        aLi[i].onmousemove = function () {
+            nowindex = this.index;
+            changgeImg();
+        };
+    }
+    oLeft.onclick = oRight.onclick = function () {
+        if (this == oLeft) {
+            nowindex--;
+            if (nowindex == -1) {
+                nowindex = aLi.length - 1;
+            }
+        } else {
+            nowindex++;
+            if (nowindex == aLi.length) {
+                nowindex = 0;
+            } //判断是否越界
+        }
+        changgeImg();
+    };
+    oContainer.onmouseover = function () {
+        clearInterval(timer);
+    };
+    oContainer.onmouseout = function () {
+        play();
+
+    };
+
+    play();
+    function play() {
+        timer = setInterval(function () {
+            oRight.onclick();
+        }, 2000);
+    };
+
+    function changgeImg() {
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].className = "";
+            aImg[i].className = "";
+        }
+        aLi[nowindex].className = "selected";
+        aImg[nowindex].className = "selected";
+    }
+    var isshow = 0;
+    function creatediv() {
+        var msgw, msgh, bordercolor;
+        msgw = 400;//提示窗口的宽度
+        msgh =405;//提示窗口的高度
+        var sWidth, sHeight;
+        if (top.location == self.location)
+            doc = document;
+        var docElement = doc.documentElement;
+        sWidth = docElement.clientWidth;
+        sHeight = docElement.clientHeight;
+        if (docElement.scrollHeight > sHeight)
+            sHeight = docElement.scrollHeight;
+        var bgObj = document.createElement("div");
+        bgObj.setAttribute('id', 'bgDiv');
+        bgObj.style.position = "absolute";
+        bgObj.style.top = "0";
+        bgObj.style.left = "0";
+        bgObj.style.background = "#777";
+        bgObj.style.filter = "progid:DXImageTransform.Microsoft.Alpha(style=3,opacity=25,finishOpacity=75";
+        bgObj.style.opacity = "0.6";
+        bgObj.style.width = sWidth + "px";
+        bgObj.style.height = sHeight + "px";
+        bgObj.style.zIndex = "10000";
+        document.body.appendChild(bgObj);
+
+
+        var msgObj = document.createElement("div");
+        msgObj.setAttribute("id", "msgDiv");
+        msgObj.setAttribute("align", "center");
+        msgObj.style.position = "absolute";
+        msgObj.style.left = "50%";
+        msgObj.style.background = "#fff";
+        msgObj.style.marginLeft = "-200px";
+        msgObj.style.top = (document.documentElement.clientHeight / 2 + document.documentElement.scrollTop - 252) + "px";
+        msgObj.style.width = msgw + "px";
+        msgObj.style.height = msgh + "px";
+        msgObj.style.zIndex = "10001";
+        msgObj.style.scrollbars = "yes";
+        msgObj.style.overflow = "auto";
+        msgObj.innerHTML = "<br /><br />" + "&nbsp;&nbsp;&nbsp;&nbsp;成都有2300多年建城史。秦汉以来，成都就以农业、手工业兴盛和文化发达著称，历代都是中国西南地区的政治、经济、文化中心和长江流域的重要城市。汉代成都与洛阳等并列为五大都会之一。唐代商贸繁荣，与扬州齐名。" +
+            "<a href=\"javascript:void(0);\" onclick='delWinD();return false;'><br /><br /><br />点我关闭窗口</a>";
+        document.body.appendChild(msgObj);
+    }
+    function delWinD() {
+        document.getElementById("bgDiv").style.display = "none";
+        document.getElementById("msgDiv").style.display = "none";
+        isshow = 0;
+    }
+    function show() {
+        isshow = 1;
+        if (!document.getElementById("msgDiv"))//小窗口不存在
+            creatediv();
+        else {
+            document.getElementById("bgDiv").style.display = "";
+            document.getElementById("msgDiv").style.display = "";
+            document.getElementById("msgDiv").style.top = (document.documentElement.clientHeight / 2 + document.documentElement.scrollTop - 252) + "px";
+        }
+    }
+</script>
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/nav.js"></script>
+</body>
+</html>

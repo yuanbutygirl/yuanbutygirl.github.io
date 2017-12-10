@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成都</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        nav .nav ul li a:hover{
+            cursor: pointer;
+            color: orange;
+        }
+        *{
+            margin:0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        img{
+            border: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+            cursor: pointer;
+        }
+        body{
+            background: #f6f6f6;
+        }
+
+
+        #main{
+            margin-top: 100px;
+            height: 2300px;
+            /*background: #545E64;*/
+        }
+        .main-common{
+            margin:0 auto;
+            width: 1200px;
+        }
+        #main-name{
+            height: 80px;
+        }
+        #main-name h4{
+            color: #111;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 32px;
+            display: block;
+            margin-top: 15px;
+        }
+        #main-name span{
+            font-size: 20px;
+            color: #666;
+            display: block;
+            float: left;
+        }
+
+        #main-navigation{
+            width: 1200px;
+            height: 40px;
+            background: #545E64;
+        }
+        #navigation-one a,#navigation-two a,#navigation-three a{
+            color: white;
+            float: left;
+            margin-left: 20px;
+            /*width: 50px;*/
+            line-height: 40px;
+        }
+        #main-navigation a:hover {
+            color:#FF8400;
+        }
+        .fixed_banner {
+            position: fixed;
+            bottom: 10px;
+            height: 100px;
+            z-index: 10000;
+            display: none;
+        }
+        /*结束导航栏*/
+
+        #main-left{
+            width: 900px;
+            height: 2100px;
+            /*background: #00ccd5;*/
+            float: left;
+            background: white;
+        }
+        #left-one-left{
+            width: 525px;
+            height: 295px;
+            margin-top: 30px;
+            float: left;
+        }
+        #left-one-right{
+            float: left;
+            width: 345px;
+            height: 295px;
+            margin-top: 30px;
+            margin-left: 30px;
+            /*background: #000000;*/
+        }
+        #left-one-left #container{
+            width: 525px;
+            height:295px;
+            position: relative;
+            margin:0 auto;
+            z-index:1;
+        }
+
+        #left-one-left #container #imgs img{
+            display: none;
+        }
+        #left-one-left #container #imgs .selected{
+            display: block;
+        }
+        #left-one-left #container #nav{
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+            z-index:1;
+        }
+        #left-one-left #container #nav li, #left-one-left #container #arrows div{
+            width: 20px;
+            height: 20px;
+            background: #000000;
+            color: #ffffff;
+            cursor: pointer;
+            text-align: center;
+            line-height: 20px;
+            float: left;
+            margin-right:5px;
+        }
+        #left-one-left #container #nav .selected{
+            background: orange;
+            /*color: #000000;*/
+        }
+        #left-one-left #container #arrows #left{
+            position: absolute;
+            left: 5px;
+            bottom: 140px;
+        }
+        #left-one-left #container #arrows #right{
+            position: absolute;
+            right: 5px;
+            bottom: 140px;
+        }
+        /*轮播图完成*/
+        .title {
+            margin-top: 0;
+            font-size: 24px;
+            font-family: "microsoft yahei";
+            font-weight: 500;
+            color: #111;
+            line-height: 24px;
+        }
+        .main-desc-p{
+            margin-top: 20px;
+            font-weight: 400;
+            /*font-size: 0.8pc;*/
+        }
+        .main-desc-p .click-more-info{
+            color: #0091d9;
+
+        }
+        .main-intro{
+            margin-top: -30px;
+        }
+        .main-besttime{
+            display: block;
+            width: 270px;
+            height: 27px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        /*main左侧上面完成*/
+
+
+        #main-right{
+            width: 298px;
+            height: 720px;
+            /*background: #00ff00;*/
+            float: left;
+            background: white;
+            margin-top: 10px;
+            border-left: solid #f6f6f6 2px;
+            border-bottom: solid #f6f6f6 2px;
+        }
+
+
+        #right-top{
+            height: 420px;
+            border-bottom: solid #f6f6f6 10px;
+        }
+        #right-top h4,#right-bottom h4{
+            display: block;
+            color: #545E64;
+            height: 50px;
+            line-height: 50px;
+            margin-left: 30px;
+        }
+        #right-top #imgdi{
+            width: 270px;
+            height: 350px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        #right-bottom-bttom{
+            width: 300px;
+            height: 1700px;
+            background: #f6f6f6;
+        }
+
+        /*预定票结束*/
+        #kongbai{
+            width: 900px;
+            height: 370px;
+        }
+        #left-two-introduce{
+            width:900px;
+            height: 1300px;
+            /*background: #000000;*/
+        }
+        #left-two-introduce .v2-sd-title{
+            display: block;
+            background: #f6f6f6;
+            height: 41px;
+            width: 870px;
+            line-height: 41px;
+            margin-left: 10px;
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            letter-spacing: 0px;
+        }
+        #left-two-introduce .v2-sd-title img{
+            vertical-align: middle;
+        }
+        #left-two-introduce .ydxz{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        /*介绍完成*/
+
+        .detail_infor p{
+            padding: 20px;
+            font-family: Cursive;
+            font-size: 20px;
+        }
+        .detail_infor ul li{
+            font-family: Cursive;
+            font-size: 18px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <div class="name"><a href="">漫步者</a></div>
+    <div class="nav" id="a">
+        <ul>
+            <li><a href="../index.html" style="text-decoration: none;">首页</a></li>
+            <li><a href="zhuce.html" style="text-decoration: none;">注册</a></li>
+        </ul>
+    </div>
+    <div class="min-nav">
+        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+    </div>
+    <div class="min-nav-main">
+        <ul>
+            <li><a href="../index.html" style="text-decoration: none;">首页</a></li>
+            <li><a href="zhuce.html" style="text-decoration: none;">注册</a></li>
+        </ul>
+    </div>
+</nav>
+    <div id="main">
+        <!--<div id="kongbai"></div>-->
+        <div id="main-name" class="main-common">
+            <h4>成都水磨古镇</h4>
+            <span>chengdushuimiguzhen</span></div>
+        <div id="main-navigation" class="fixed_banner">
+        </div>
+        <div id="main-introduce" class="main-common">
+            <div id="main-left" >
+                <div id="left-one-left">
+                    <div id="container">
+                        <div id="imgs">
+                            <img src="../f/sm1.jpg" alt="" class="selected">
+                            <img src="../f/sm2.jpg" alt="">
+                            <img src="../f/sm3.jpg" alt="">
+                            <img src="../f/sm4.jpg" alt="">
+                        </div>
+                        <ul id="nav">
+                            <li class="selected">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                        <div id="arrows">
+                            <div id="left">&lt;</div>
+                            <div id="right">&gt;</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="left-one-right">
+                    <h3 class="title">关于成都都江堰水磨古镇&nbsp;&nbsp;&nbsp;
+                    </h3>
+                    <p class="main-desc-p">
+                        水磨古镇距成都76公里，都江堰市25公里，映秀19公里，是镶嵌在：都江堰、青城山、卧龙大熊猫栖息地、九寨沟、黄龙之间的一颗璀璨明珠，被称为世界遗产群中的世界地震遗产。...
+                        <a class="click-more-info" href="javascript:void(0);" onclick="show();return false;">[详细简介]</a>
+                    </p>
+                    <div class="main-intro">
+                        <span class="main-besttime">地点：都江堰市水磨古镇</span>
+                        <span class="main-besttime">景点类型：世界地震遗址</span>
+                        <span class="main-besttime">时间:夏季</span>
+                        <span class="main-besttime">旅行团类型：陌生人组团 有旅行管家</span>
+                    </div></div>
+                <div id="kongbai"></div>
+                <div id="left-two-introduce">
+
+                    <div class="v2_di detail_infor v2-fordfImg fordfImg">
+                        <div class="v2-sd-title"><span>案例详情</span></div>
+                        <div class="ydxz">具体介绍</div>
+                        <div class="v2_di detail_infor v2-fordfImg fordfImg">
+                            <p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                &nbsp; &nbsp;（1）初识
+                                旅友只允许携带基础的个人生活用品，民宿提供日常生活设施，保证民宿简朴、干净整洁、舒适的住宿环境。旅行管家温馨提示民宿期间的注意事项，简述当地的民风民俗。旅行管家带领旅友互相认识，可保密个人真实社会背景，组织做一些素拓活动（如）增进旅行彼此之间的了解，消除陌生感激发大家的积极性，尽快开启旅行模式，为后期开展的活动打下情感基础。
+                                晚上发布旅友要齐心协力举办一个庆祝旅行开始的一个狂欢，公司提供物资支持，考验旅友互相之间的默契，大家快速融合。
+                                让旅友在这样一个特别的狂欢开启旅行，这样有仪式感的开端将会给旅行者不一样的内心体验，对这次旅行有更多的信心和期待。
+                                在这个狂欢夜的最后，旅友需卡片写下旅行期间的小心愿或者要达成的小目标，将所有写好的卡片封存到心愿箱，
+                                到旅行结束一起分享。<br></p>
+                            <p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                （2）体验
+                                在旅行的开始，旅行团需要合作学会在民宿生活的基本技能，公司为旅友提供基本的工具和一定的人民币，他们可以自行进行食材、生活物资的采购，新鲜蔬菜需到菜园里自行采摘。制作食物的过程提供具体操作视频作参考。通过使用原生态的方式做饭，亲自去田地收取新鲜的蔬菜，收获自然的馈赠享受劳动的快乐。参与绿色健康的生活方式，享受回归田园生活的那份简单与闲适。
+                                旅行团可以在提供的物质基础上，可以通过选择任务清单上的活动完成得到相应的钱币兑换更多自己想要换取的东西。
+                            </p>
+                            <br>
+                            <h4>任务清单</h4>
+                            <ul>
+                                <li>上午：早上 8:00 在成都营门口白芙蓉宾馆统一集合出发，经都映高速，沿紫平铺库区而上（约 110 公里，车程 2 小时左右）观赏 " 地震壁画 ", 观汶川映秀镇全貌 , 游览映秀镇新城, 感受灾后重建成果，后游览漩口中学地震遗址，倒塌的教学楼 , 学生宿舍还残留着学生的床 ……. 在漩口中学大门的石阶上，放着一座用汉白玉做成的、带有裂纹的表盘，表盘上的指针指向了 2008 年 5 月 12 日 14 时 28 分。 2009 年 5 月 12 日，胡锦涛总书计在这里为纪念汶川特大地震一周年发表了重要讲话；亲历8.14泥石流跟映秀带来的又一次灾难，参观完景点后前往水磨古镇。
+                                </li>
+                                <li>中午：在水磨用餐(自理) 
+                                </li>
+                                <li>下午：后参观游览洋溢着浓郁西羌民族特色的"西羌名城，文化古镇"---水磨古镇，游览明代的古戏台——万年台、清代的---大夫第,及名称取自唐代诗人王之涣的名句"羌笛何须怨杨柳，春风不度玉门关"---春风阁，沿着禅寿老街，整洁的石板路一路走来，飘香的水磨老腊肉，鲜嫩的豆花，还有九大碗的流水席，飘得老远的香味让你忍不住寻 着前去。。。。。游览完毕带着愉快的心情返回成都温暖的家中。
+                                </li>
+                                <li>服务标准 费用包含
+1、门票：景点首道门票               2、交通：全程空调旅游车
+3、导游：全程优秀导游服务           4、保险： 旅行社责任险、人生意外险
+【费用不包括】 1、 行程外的一切个人娱乐消费; 2、不含午餐 备注： 1、在不减少景点的前提下本社可调整游览顺序， 2、若因天气等人力不可抗拒因素所产生的费用由客人自负。    3、请自备个人常用应急药品,注意保暖避免感冒; 4、报名时提供名单,身份证号码,联系方式,航班号 5、小孩只含车、餐、保险、导服，不含门票. 的夏天。
+                                </li>
+                            </ul>
+                            <p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                旅友可以自由支配民宿里的物品，像一个当地人一样生活。整个旅行期间卸下城市生活里的负担，旅友们互相协作，聆听自然的虫叫蝉鸣，呼吸新鲜的空气，近距离倾尽大自然，与小伙伴们分享自己的心情，谈人生聊理想，尽情享受乡村安逸宁静的生活。在轻松愉快的生活里，体验不一样的生活状态，试着突破原来固有的思维模式和圈子，换一个角度去思考问题会不会有不同，静下来寻觅自己内心的声音，享受生命无限可能性。
+                            </p>
+                            <p style="text-indent:32px;line-height:27px;margin-bottom: 10px;margin-left:10px;">
+                                旅行管家组织星空下的方向，在农家的小院里围成一圈，公开旅友心愿卡，在静谧的乡村夜晚旅友分享旅行日记里的感动，分享自己的故事，分享着美好或遗憾，倾听别人的故事，思考自己人生。最后，送一个临别礼物给所有的旅友——剪辑旅行期间的美好瞬间的视频。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-right">
+                <div id="right-top">
+                    <h4>旅游地图</h4>
+                    <div id="imgdi"><img src="../f/sm5.jpg" alt=""/></div>
+                </div>
+
+                <div id="right-bottom-bttom">
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!--轮播图js-->
+<script>
+    var oNav = document.getElementById("nav");
+    var aLi = oNav.getElementsByTagName("li");
+    var oImgs = document.getElementById("imgs");
+    var aImg = oImgs.getElementsByTagName("img");
+    var oLeft = document.getElementById("left");
+    var oRight = document.getElementById("right");
+    var oContainer = document.getElementById("container");
+    var nowindex = 0; //保存当前的index
+    var timer;
+    for (var i = 0; i < aLi.length; i++) {
+        aLi[i].index = i;
+        aLi[i].onmousemove = function () {
+            nowindex = this.index;
+            changgeImg();
+        };
+    }
+    oLeft.onclick = oRight.onclick = function () {
+        if (this == oLeft) {
+            nowindex--;
+            if (nowindex == -1) {
+                nowindex = aLi.length - 1;
+            }
+        } else {
+            nowindex++;
+            if (nowindex == aLi.length) {
+                nowindex = 0;
+            } //判断是否越界
+        }
+        changgeImg();
+    };
+    oContainer.onmouseover = function () {
+        clearInterval(timer);
+    };
+    oContainer.onmouseout = function () {
+        play();
+
+    };
+
+    play();
+    function play() {
+        timer = setInterval(function () {
+            oRight.onclick();
+        }, 2000);
+    };
+
+    function changgeImg() {
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].className = "";
+            aImg[i].className = "";
+        }
+        aLi[nowindex].className = "selected";
+        aImg[nowindex].className = "selected";
+    }
+    var isshow = 0;
+    function creatediv() {
+        var msgw, msgh, bordercolor;
+        msgw = 400;//提示窗口的宽度
+        msgh =405;//提示窗口的高度
+        var sWidth, sHeight;
+        if (top.location == self.location)
+            doc = document;
+        var docElement = doc.documentElement;
+        sWidth = docElement.clientWidth;
+        sHeight = docElement.clientHeight;
+        if (docElement.scrollHeight > sHeight)
+            sHeight = docElement.scrollHeight;
+        var bgObj = document.createElement("div");
+        bgObj.setAttribute('id', 'bgDiv');
+        bgObj.style.position = "absolute";
+        bgObj.style.top = "0";
+        bgObj.style.left = "0";
+        bgObj.style.background = "#777";
+        bgObj.style.filter = "progid:DXImageTransform.Microsoft.Alpha(style=3,opacity=25,finishOpacity=75";
+        bgObj.style.opacity = "0.6";
+        bgObj.style.width = sWidth + "px";
+        bgObj.style.height = sHeight + "px";
+        bgObj.style.zIndex = "10000";
+        document.body.appendChild(bgObj);
+
+
+        var msgObj = document.createElement("div");
+        msgObj.setAttribute("id", "msgDiv");
+        msgObj.setAttribute("align", "center");
+        msgObj.style.position = "absolute";
+        msgObj.style.left = "50%";
+        msgObj.style.background = "#fff";
+        msgObj.style.marginLeft = "-200px";
+        msgObj.style.top = (document.documentElement.clientHeight / 2 + document.documentElement.scrollTop - 252) + "px";
+        msgObj.style.width = msgw + "px";
+        msgObj.style.height = msgh + "px";
+        msgObj.style.zIndex = "10001";
+        msgObj.style.scrollbars = "yes";
+        msgObj.style.overflow = "auto";
+        msgObj.innerHTML = "<br /><br />" + "&nbsp;&nbsp;&nbsp;&nbsp;水磨镇既是汉族和少数民族的交融区，在灾后重建中赋予其厚重的南粤新元素，内地风情和藏羌文化交相辉映，西蜀人文和禅佛文化联袂绽放。" +
+            "<a href=\"javascript:void(0);\" onclick='delWinD();return false;'><br /><br /><br />点我关闭窗口</a>";
+        document.body.appendChild(msgObj);
+    }
+    function delWinD() {
+        document.getElementById("bgDiv").style.display = "none";
+        document.getElementById("msgDiv").style.display = "none";
+        isshow = 0;
+    }
+    function show() {
+        isshow = 1;
+        if (!document.getElementById("msgDiv"))//小窗口不存在
+            creatediv();
+        else {
+            document.getElementById("bgDiv").style.display = "";
+            document.getElementById("msgDiv").style.display = "";
+            document.getElementById("msgDiv").style.top = (document.documentElement.clientHeight / 2 + document.documentElement.scrollTop - 252) + "px";
+        }
+    }
+</script>
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/nav.js"></script>
+</body>
+</html>
